@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Posts</title>
+    <title>Categories</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -20,10 +20,10 @@
 
 
 
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="Categories" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://mfluevano.github.io/posts/" />
+<meta property="og:url" content="https://mfluevano.github.io/en/categories/" />
 
 
 
@@ -62,7 +62,7 @@
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/en">
       Mario F. Luevano</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
@@ -70,6 +70,29 @@
 
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
+      
+        
+
+  
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+      <span class="flag-icon flag-icon-gb"></span>
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+        <a class="dropdown-item nav-link languages-item" href="/es/categories">
+          
+          <span class="flag-icon flag-icon-es"></span>
+          Spanish
+        </a>
+      
+    </div>
+</li>
+
       
       </ul>
     </div>
@@ -91,14 +114,21 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="/search">
+        <form class="mx-auto" method="get" action="/en/search">
           <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
-            <div class="subtree">
-                
+            <li id="list-heading"><a href="/en/categories" data-filter="all">Categories</a></li>
+            <div class="subtree taxonomy-terms">
+              
+              
+
+
+
+  
+  
+
 
             </div>
           </ul>
@@ -183,7 +213,7 @@
       <div class="row text-left">
         
         <div class="col-md-4 col-sm-12">
-          <h5>Navegación</h5>
+          <h5>Navigation</h5>
           
           <ul>
               
@@ -192,7 +222,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#about">About</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#about">About</a>
                 </li>
               
               
@@ -201,7 +231,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#experiences">Experiences</a>
                 </li>
               
               
@@ -210,7 +240,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#education">Education</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#education">Education</a>
                 </li>
               
               
@@ -219,7 +249,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#projects">Projects</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#projects">Projects</a>
                 </li>
               
               
@@ -228,7 +258,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -237,7 +267,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#accomplishments">Accomplishments</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#accomplishments">Accomplishments</a>
                 </li>
               
               
@@ -246,7 +276,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://mfluevano.github.io/#achievements">Achievements</a>
+                  <a class="smooth-scroll" href="https://mfluevano.github.io/en/#achievements">Achievements</a>
                 </li>
               
           </ul>
@@ -255,10 +285,10 @@
         
         
         <div class="col-md-4 col-sm-12">
-          <h5>Contacto</h5>
+          <h5>Contact me:</h5>
           <ul>
             
-            <li><span>Email: </span> <span>mluevanov@fmail.com.com</span></li>
+            <li><span>Email: </span> <span>mluevanov@example.com</span></li>
             
             <li><span>Phone: </span> <span>&#43;52477 314 98 94</span></li>
             
@@ -269,15 +299,15 @@
         
           
           <div class="col-md-4 col-sm-12">
-            <p>Subscribirse</p>
+            <p>Stay up to date with email notification</p>
             
               <form method='post' action='https://blogtrottr.com'>
               <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Ingrese email"/><br />
-              <input type='hidden' name='btr_url' value='https://mfluevano.github.io/index.xml' />
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://mfluevano.github.io/en/index.xml' />
               <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">Al ingresar su dirección de correo electrónico, acepta recibir el boletín de este sitio web.</small>
-              <button type="submit" class="btn btn-info"> Enviar </button>
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
               </form>
             
           </div>
@@ -297,7 +327,7 @@
         </div>
         <div class="col-md-4 text-center">© 2021 Copyright.</div>
         <div class="col-md-4 text-right">
-          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Funcionando con
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
             src="/images/hugo-logo.svg"
             alt="Hugo Logo"
